@@ -1,7 +1,6 @@
 const formInputEl = document.querySelector("#name-input");
 const userNameOutputEl = document.querySelector("#name-output");
 
-
 formInputEl.addEventListener("focus", (event) => {
   event.target.style.outline = "3px solid teal";
 });
@@ -13,5 +12,6 @@ formInputEl.addEventListener("blur", (event) => {
 formInputEl.addEventListener("input", (event) => {
   event.target.value.trim() === ""
     ? (userNameOutputEl.textContent = `Anonymous`)
-    : (userNameOutputEl.textContent = event.target.value);
+    : (userNameOutputEl.textContent = event.target.value.trim());
 });
+

@@ -11,11 +11,11 @@ const ingredientsList = document.querySelector("#ingredients");
 
 const makeIngredientsList = (ingredients) => {
   return ingredients.map((ingredient) => {
-    const itemRef = document.createElement("li");
-    itemRef.classList.add("item");
-    itemRef.textContent = ingredient;
+    const itemEl = document.createElement("li");
+    itemEl.classList.add("item");
+    itemEl.textContent = ingredient;
 
-    return itemRef;
+    return itemEl;
   });
 };
 

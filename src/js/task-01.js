@@ -1,13 +1,14 @@
-
 const getCategoriesNumbers = () => {
-  const numberRef = document.querySelectorAll(".item").length;
-  console.log(`Number of categories: ${numberRef}`);
+  const numberEl = document.querySelectorAll(".item").length;
+  console.log(`Number of categories: ${numberEl}`);
 };
+
 getCategoriesNumbers();
 
-const titleRef = document.querySelectorAll(".item h2");
-const itemNumbersRef = document.querySelectorAll(".item ul");
-titleRef.forEach(function (value, index) {
-  console.log(`Category: ${value.textContent} 
-    Elements: ${itemNumbersRef[index].children.length}`);
+const itemElements = document.querySelectorAll(".item");
+itemElements.forEach((item) => {
+  const titleEl = item.firstElementChild;
+  const itemNumbersEl = item.lastElementChild;
+  console.log(`Category: ${titleEl.textContent} 
+    Elements: ${itemNumbersEl.children.length}`);
 });
