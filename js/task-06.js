@@ -1,8 +1,8 @@
-const formInputEl = document.querySelector("#validation-input");
+const formInputEl = document.querySelector('#validation-input');
 
-const dataLength = Number(formInputEl.getAttribute("data-length"));
+const dataLength = Number(formInputEl.getAttribute('data-length'));
 
-const handleInputFormValidation = (event) => {
+const handleInputFormValidation = event => {
   if (event.target.value.trim().length === dataLength) {
     formInputEl.classList.add(`valid`);
     formInputEl.classList.remove(`invalid`);
@@ -14,4 +14,4 @@ const handleInputFormValidation = (event) => {
     formInputEl.classList.add(`invalid`);
   }
 };
-formInputEl.addEventListener("blur", handleInputFormValidation);
+formInputEl.addEventListener('blur', handleInputFormValidation);

@@ -3,10 +3,9 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-const backgroundContainerEl = document.querySelector(".widget");
-const colorValueEl = document.querySelector(".color");
-const changeColorButtonEl = document.querySelector(".change-color");
-
+const backgroundContainerEl = document.querySelector('.widget');
+const colorValueEl = document.querySelector('.color');
+const changeColorButtonEl = document.querySelector('.change-color');
 
 const handleButtonChangeColorClick = () => {
   const hexColor = getRandomHexColor();
@@ -14,4 +13,4 @@ const handleButtonChangeColorClick = () => {
   colorValueEl.textContent = hexColor;
 };
 
-changeColorButtonEl.addEventListener("click", handleButtonChangeColorClick);
+changeColorButtonEl.addEventListener('click', handleButtonChangeColorClick);

@@ -1,8 +1,8 @@
 let counterValue = 0;
 let step = 1;
 
-const counterEl = document.querySelector("#counter");
-const valueEl = document.querySelector("#value");
+const counterEl = document.querySelector('#counter');
+const valueEl = document.querySelector('#value');
 
 const handleDecrementButtonEl = () => {
   counterValue -= step;
@@ -14,5 +14,5 @@ const handleIncrementButtonEl = () => {
   valueEl.textContent = counterValue;
 };
 
-counterEl.firstElementChild.addEventListener("click", handleDecrementButtonEl);
-counterEl.lastElementChild.addEventListener("click", handleIncrementButtonEl);
+counterEl.firstElementChild.addEventListener('click', handleDecrementButtonEl);
+counterEl.lastElementChild.addEventListener('click', handleIncrementButtonEl);
